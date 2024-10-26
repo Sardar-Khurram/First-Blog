@@ -6,6 +6,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px; /* Very small width */
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0; /* Light gray for track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #767575; /* Slightly darker gray for thumb */
+  border-radius: 10px; /* Smooth, rounded thumb */
+  border: 2px solid #e0e0e0; /* Makes the thumb stand out a bit */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090; /* Darker gray on hover */
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
