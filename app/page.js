@@ -202,7 +202,7 @@ export default function Home() {
           {/* Testimonial 1 */}
           <div className="w-full lg:w-1/3 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">
             <p className="text-lg italic text-gray-500 dark:text-gray-300">
-              "This service has truly transformed the way we manage our projects. Highly recommend!"
+              This service has truly transformed the way we manage our projects. Highly recommend!
             </p>
             <div className="mt-6">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Jane Doe</h4>
@@ -213,7 +213,7 @@ export default function Home() {
           {/* Testimonial 2 */}
           <div className="w-full lg:w-1/3 p-6 mt-8 lg:mt-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">
             <p className="text-lg italic text-gray-500 dark:text-gray-300">
-              "Excellent customer support and amazing features. Our productivity has skyrocketed!"
+              Excellent customer support and amazing features. Our productivity has skyrocketed!
             </p>
             <div className="mt-6">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">John Smith</h4>
@@ -224,7 +224,7 @@ export default function Home() {
           {/* Testimonial 3 */}
           <div className="w-full lg:w-1/3 p-6 mt-8 lg:mt-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">
             <p className="text-lg italic text-gray-500 dark:text-gray-300">
-              "A game changer for our team. We've been able to scale quickly thanks to this service!"
+              A game changer for our team. Weve been able to scale quickly thanks to this service!
             </p>
             <div className="mt-6">
               <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Alice Johnson</h4>
