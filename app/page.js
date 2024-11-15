@@ -2,6 +2,7 @@
 import Typed from 'typed.js';
 import React from 'react';
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 export default function Home() {
 
   const el = useRef(null);
@@ -51,9 +52,21 @@ export default function Home() {
             </form>
           </div> */}
         </div>
+
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
-          <img src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg" alt="tailwind css components" className="w-full h-full max-w-md mx-auto" />
+            <div className="relative w-full h-full max-w-md mx-auto">
+                <Image
+                    src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg"
+                    alt="tailwind css components"
+                    layout="responsive" // Adjusts based on the container size
+                    width={600} // Adjust width to match max-w-md or your desired value
+                    height={600} // Adjust height proportionally
+                    objectFit="contain" // Ensures the image scales to fit within the container
+                    className="rounded-lg" // Additional styling if needed
+                />
+            </div>
         </div>
+
       </section>
 
       {/* Pricing Section */}
@@ -119,8 +132,16 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row lg:space-x-8">
           {/* Blog 1 */}
           <div className="flex-1 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">
-            <img src="1.jpg" alt="Understanding React Hooks" className="w-full h-48 object-cover rounded-t-lg" />
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-4">Understanding Modern C++ Resource Management</h3>
+          <div className="relative w-full h-48"> {/* Container with specified width and height */}
+            <Image
+                src="/1.jpg"
+                alt="Understanding React Hooks"
+                className="rounded-t-lg"
+                layout="fill" // Makes the image fill the parent container
+                objectFit="cover" // Ensures the image covers the container like `object-cover`
+            />
+        </div>
+          <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-4">Understanding Modern C++ Resource Management</h3>
             <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
               Dive deep into the world of modern C++ resource management and learn how to use smart pointers in your projects
             </p>
@@ -130,8 +151,15 @@ export default function Home() {
           </div>
 
           {/* Blog 2 */}
-          <div className="flex-1 p-6 mt-8 lg:mt-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">
-            <img src="2.jpg" alt="Mastering Tailwind CSS" className="w-full h-48 object-cover rounded-t-lg" />
+          <div className="flex-1 p-6 mt-8 lg:mt-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">            <div className="relative w-full h-48"> {/* Container with specified width and height */}
+            <Image
+                src="/2.jpg"
+                alt="Understanding React Hooks"
+                className="rounded-t-lg"
+                layout="fill" // Makes the image fill the parent container
+                objectFit="cover" // Ensures the image covers the container like `object-cover`
+            />
+        </div>
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-4">Understanding JavaScript Fundamentals</h3>
             <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
               Dive deep into the world of JavaScript and learn how to use it effectively in your projects
@@ -142,8 +170,15 @@ export default function Home() {
           </div>
 
           {/* Blog 3 */}
-          <div className="flex-1 p-6 mt-8 lg:mt-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">
-            <img src="3.jpg" alt="JavaScript ES6 Features" className="w-full h-48 object-cover rounded-t-lg" />
+          <div className="flex-1 p-6 mt-8 lg:mt-0 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl text-center">            <div className="relative w-full h-48"> {/* Container with specified width and height */}
+            <Image
+                src="/3.jpg"
+                alt="Understanding React Hooks"
+                className="rounded-t-lg"
+                layout="fill" // Makes the image fill the parent container
+                objectFit="cover" // Ensures the image covers the container like `object-cover`
+            />
+        </div>
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mt-4">Understanding React.js Hooks</h3>
             <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
               Dive deep into the world of React Hooks and learn how to use them effectively in your projects
