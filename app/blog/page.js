@@ -5,8 +5,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Blog = () => {
+    // const contentDir = path.join(process.cwd(), 'content');
+    // const contentDir = 'content'; // Adjust this path as needed
+    // console.log(contentDir); // Add this line to debug
+    // const dirContent = fs.readdirSync(contentDir, 'utf-8');
+
+
     const contentDir = path.join(process.cwd(), 'content');
     const dirContent = fs.readdirSync(contentDir, 'utf-8');
+    console.log(dirContent); // Add this line to debug
 
     const blogs = dirContent.map(file => {
         const filePath = path.join(contentDir, file);

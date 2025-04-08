@@ -15,6 +15,7 @@ import rehypePrettyCode from "rehype-pretty-code";
 export default async function Page({ params }) {
 
     const filePath = `content/${params.slug}.md`;
+    console.log(filePath);
     if (!fs.existsSync(filePath)) {
         notFound();
     }
