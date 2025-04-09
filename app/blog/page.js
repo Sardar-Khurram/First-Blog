@@ -13,7 +13,7 @@ const Blog = () => {
 
     const contentDir = path.join(process.cwd(), 'content');
     const dirContent = fs.readdirSync(contentDir, 'utf-8');
-    console.log(dirContent); // Add this line to debug
+    // console.log(dirContent); // Add this line to debug
 
     const blogs = dirContent.map(file => {
         const filePath = path.join(contentDir, file);
