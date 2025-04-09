@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "/components/ui/Navbar";
 import { ThemeProvider } from "/components/theme-provider"
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +24,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="lXZcTHdJppmyEqWmdr0F273Gu1i9ae_KWA28Ehj_g4o" />
+        <meta name="google-site-verification" content="lXZcTHdJppmyEqWmdr0F273Gu1i9ae_KWA28Ehj_g4o" />
+
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-LWEHNLKVG7`}
+        />
+        <Script id="google-analytics">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LWEHNLKVG7');
+  `}
+        </Script>
+
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider
